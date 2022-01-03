@@ -2,7 +2,7 @@
 MVC패턴 공부
 MVC 
 
-Apple에서 기본적으로 지원하는 디자인 패턴으로 Model, View, Controller 구조로 이루어진 아키텍처 패턴 
+Apple에서 기본적으로 지원하는 디자인 패턴으로 Model, View, Controller 구조로 이루어진 아키텍처 패턴 \n
 Model : 앱의 데이터와 데이터를 관리하는 비즈니스 로직을 가짐
 View : 사용자에게 보여주기 위한 UI를 담당
 Controller : Model과 View 의 징검다리 역할로 View와 사용자간의 상호작용을 Model 에게 전달 하거나 Model의 변화를 View에게 전달하여 View를 어떻게 업데이트 할지 알려줌
