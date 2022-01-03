@@ -17,6 +17,9 @@
 		C49B4A5327829A1D00BDD5F8 /* Study_MVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49B4A5227829A1D00BDD5F8 /* Study_MVCTests.swift */; };
 		C49B4A5D27829A1D00BDD5F8 /* Study_MVCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49B4A5C27829A1D00BDD5F8 /* Study_MVCUITests.swift */; };
 		C49B4A5F27829A1D00BDD5F8 /* Study_MVCUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49B4A5E27829A1D00BDD5F8 /* Study_MVCUITestsLaunchTests.swift */; };
+		C49B4A6F27829A4F00BDD5F8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49B4A6E27829A4F00BDD5F8 /* User.swift */; };
+		C49B4A7227829B5E00BDD5F8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49B4A7027829B5E00BDD5F8 /* TableViewCell.swift */; };
+		C49B4A7327829B5E00BDD5F8 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C49B4A7127829B5E00BDD5F8 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		C49B4A5827829A1D00BDD5F8 /* Study_MVCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Study_MVCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C49B4A5C27829A1D00BDD5F8 /* Study_MVCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Study_MVCUITests.swift; sourceTree = "<group>"; };
 		C49B4A5E27829A1D00BDD5F8 /* Study_MVCUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Study_MVCUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C49B4A6E27829A4F00BDD5F8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C49B4A7027829B5E00BDD5F8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		C49B4A7127829B5E00BDD5F8 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +107,11 @@
 		C49B4A3727829A1800BDD5F8 /* Study_MVC */ = {
 			isa = PBXGroup;
 			children = (
+				C49B4A6D27829A3700BDD5F8 /* Models */,
+				C49B4A6C27829A3500BDD5F8 /* Views */,
+				C49B4A6B27829A3200BDD5F8 /* Controller */,
 				C49B4A3827829A1800BDD5F8 /* AppDelegate.swift */,
 				C49B4A3A27829A1800BDD5F8 /* SceneDelegate.swift */,
-				C49B4A3C27829A1800BDD5F8 /* ViewController.swift */,
 				C49B4A3E27829A1800BDD5F8 /* Main.storyboard */,
 				C49B4A4427829A1D00BDD5F8 /* Assets.xcassets */,
 				C49B4A4627829A1D00BDD5F8 /* LaunchScreen.storyboard */,
@@ -128,6 +136,31 @@
 				C49B4A5E27829A1D00BDD5F8 /* Study_MVCUITestsLaunchTests.swift */,
 			);
 			path = Study_MVCUITests;
+			sourceTree = "<group>";
+		};
+		C49B4A6B27829A3200BDD5F8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C49B4A3C27829A1800BDD5F8 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C49B4A6C27829A3500BDD5F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C49B4A7027829B5E00BDD5F8 /* TableViewCell.swift */,
+				C49B4A7127829B5E00BDD5F8 /* TableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C49B4A6D27829A3700BDD5F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C49B4A6E27829A4F00BDD5F8 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C49B4A4827829A1D00BDD5F8 /* LaunchScreen.storyboard in Resources */,
+				C49B4A7327829B5E00BDD5F8 /* TableViewCell.xib in Resources */,
 				C49B4A4527829A1D00BDD5F8 /* Assets.xcassets in Resources */,
 				C49B4A4027829A1800BDD5F8 /* Main.storyboard in Resources */,
 			);
@@ -261,8 +295,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C49B4A6F27829A4F00BDD5F8 /* User.swift in Sources */,
 				C49B4A4327829A1800BDD5F8 /* Study_MVC.xcdatamodeld in Sources */,
 				C49B4A3D27829A1800BDD5F8 /* ViewController.swift in Sources */,
+				C49B4A7227829B5E00BDD5F8 /* TableViewCell.swift in Sources */,
 				C49B4A3927829A1800BDD5F8 /* AppDelegate.swift in Sources */,
 				C49B4A3B27829A1800BDD5F8 /* SceneDelegate.swift in Sources */,
 			);
