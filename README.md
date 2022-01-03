@@ -13,3 +13,5 @@ Apple에서 기본적으로 지원하는 패턴이라 손쉽게 사용 가능
 단점
 VIew와 Controller가 너무 밀접하게 연관되어 있음 -> VIew 와 Controller 분리가 어려워짐
 규모가 큰 프로젝트에는 유지보수가 힘들기 때문에 적합하지 않음
+
+출처 : https://velog.io/@zooneon/iOS-MVC-%ED%8C%A8%ED%84%B4%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90
